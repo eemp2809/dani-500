@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>500 razones por las cuales te amo ❤️</title>
+<style>
+:root{--rosa-claro:#fff0f4;--rosa:#f8c8d8;--rosa-fuerte:#e98da9;--vino:#8f304f;--rojo:#c94b67;--blanco:#fffdfd;--texto:#542b38;--sombra:rgba(143,48,79,.15)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at top left,#fff7f9,transparent 40%),linear-gradient(135deg,#fff5f7,#ffe8ef);color:var(--texto);overflow-x:hidden}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-50px;color:rgba(201,75,103,.18);font-size:20px;animation:floatHeart linear infinite}
+@keyframes floatHeart{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.welcome{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;position:relative;z-index:1}
+.welcome-content{max-width:800px;animation:appear 1.5s ease}
+@keyframes appear{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.small-title{letter-spacing:4px;text-transform:uppercase;font-size:.8rem;color:var(--vino);margin-bottom:20px}
+.welcome h1,.section-title,.special h2,.final h2{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--vino)}
+.welcome h1{font-size:clamp(3rem,8vw,6.5rem);line-height:1.05;margin-bottom:25px}
+.welcome p{font-size:1.15rem;max-width:600px;margin:auto;line-height:1.8;color:#744653}
+button{cursor:pointer}
+.enter-button,.reason-button{border:none;color:white;border-radius:50px;font-size:1rem;transition:.3s}
+.enter-button{margin-top:40px;background:var(--vino);padding:16px 32px;box-shadow:0 10px 30px var(--sombra)}
+.enter-button:hover,.reason-button:hover{transform:translateY(-4px);background:var(--rojo);box-shadow:0 15px 35px var(--sombra)}
+.main{min-height:100vh;padding:100px 20px;display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
+.section-title{text-align:center;font-size:clamp(2.3rem,6vw,4rem);margin-bottom:10px}
+.section-subtitle{text-align:center;color:#805360;margin-bottom:45px}
+.counter-container{width:min(650px,100%);margin-bottom:35px}
+.counter{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:.95rem}
+.counter strong{color:var(--vino);font-size:1.2rem}
+.progress{width:100%;height:9px;background:rgba(143,48,79,.12);border-radius:20px;overflow:hidden}
+.progress-bar{width:0;height:100%;background:linear-gradient(90deg,#e98da9,#8f304f);border-radius:inherit;transition:width .5s ease}
+.reason-card{width:min(700px,100%);min-height:300px;background:rgba(255,253,253,.8);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.8);border-radius:35px;padding:50px 35px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-shadow:0 20px 60px rgba(143,48,79,.12);position:relative;overflow:hidden}
+.reason-number{font-family:Georgia,serif;font-size:1rem;color:var(--rosa-fuerte);margin-bottom:20px}
+.reason-text{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.4rem,4vw,2.2rem);font-style:italic;line-height:1.5;color:var(--vino)}
+.reason-heart{font-size:3rem;margin-top:25px;animation:heartbeat 1.7s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.change-animation{animation:changeReason .6s ease}
+@keyframes changeReason{0%{opacity:0;transform:translateY(15px) scale(.97)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.reason-button{margin-top:35px;background:linear-gradient(135deg,#8f304f,#c94b67);padding:18px 35px;box-shadow:0 10px 30px rgba(143,48,79,.2)}
+.reason-button:active{transform:scale(.96)}
+.special{width:min(800px,100%);margin-top:120px;padding:60px 35px;text-align:center;background:rgba(255,255,255,.65);border-radius:35px;box-shadow:0 20px 60px rgba(143,48,79,.08)}
+.special h2{font-size:2.5rem;margin-bottom:30px}
+.special p,.final p{line-height:2;color:#704653;font-size:1.05rem}
+.final{display:none;min-height:100vh;padding:80px 25px;align-items:center;justify-content:center;text-align:center;position:relative;z-index:2}
+.final.show{display:flex;animation:appear 1.5s ease}
+.final-content{max-width:800px}
+.final-heart{font-size:6rem;animation:heartbeat 1.4s infinite;margin-bottom:30px}
+.final h2{font-size:clamp(2.5rem,7vw,5rem);margin-bottom:30px}
+footer{text-align:center;padding:40px 20px;color:#986878;position:relative;z-index:2}
+@media(max-width:600px){.welcome{padding:25px}.welcome h1{font-size:3.2rem}.welcome p{font-size:1rem}.reason-card{min-height:330px;padding:40px 25px;border-radius:25px}.reason-text{font-size:1.45rem}.special{padding:45px 25px}.special h2{font-size:2rem}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<section class="welcome" id="welcome">
+<div class="welcome-content">
+<div class="small-title">Para alguien muy especial</div>
+<h1>Para el amor<br>de mi vida</h1>
+<p>Hay cosas que son imposibles de explicar con palabras... pero aun así quiero intentarlo.</p>
+<button class="enter-button" onclick="entrar()">Entrar a nuestro pequeño mundo ❤️</button>
+</div>
+</section>
+
+<main class="main" id="main">
+<h2 class="section-title">500 razones por las cuales te amo</h2>
+<p class="section-subtitle">Una por una, porque tú mereces conocerlas todas.</p>
+
+<div class="counter-container">
+<div class="counter"><span>Razones descubiertas</span><strong><span id="current">0</span> / 500</strong></div>
+<div class="progress"><div class="progress-bar" id="progress"></div></div>
+</div>
+
+<div class="reason-card" id="reasonCard">
+<div class="reason-number" id="reasonNumber">Una pequeña razón...</div>
+<div class="reason-text" id="reasonText">Haz clic para descubrir por qué te amo.</div>
+<div class="reason-heart">❤️</div>
+</div>
+
+<button class="reason-button" id="reasonButton" onclick="nextReason()">Descubrir una razón ❤️</button>
+
+<section class="special">
+<h2>Si alguna vez olvidas cuánto te amo...</h2>
+<p>
+Quiero que recuerdes que estas 500 razones no son realmente todas las razones que tengo para amarte.
+<br><br>
+Son solamente 500 pequeñas partes de todo lo que siento por ti.
+<br><br>
+Amo tus detalles, tus palabras, tus ocurrencias, tu forma de hacerme sonreír y cada pequeño momento que hemos compartido.
+<br><br>
+Y si algún día llegamos a estas 500 razones, probablemente voy a encontrar otras 500.
+Porque contigo siempre voy a encontrar una razón más.
+<br><br>
+<strong>Y esta lista está hecha para ti, Daniela. ❤️</strong>
+</p>
+</section>
+</main>
+
+<section class="final" id="final">
+<div class="final-content">
+<div class="final-heart">❤️</div>
+<h2>Llegamos a 500</h2>
+<p>
+Y aunque acabamos de llegar a 500 razones, quiero que sepas algo...
+<br><br>
+No necesito 500 razones para elegirte.
+<br><br>
+Te elegiría incluso si tuviera que empezar esta lista nuevamente desde cero.
+<br><br>
+Te elegiría hoy. Te elegiría mañana. Y te volvería a elegir una y otra vez.
+<br><br>
+Gracias por existir, gracias por llegar a mi vida y gracias por permitirme amarte.
+<br><br>
+<strong>Te amo, Daniela. ❤️</strong>
+</p>
+</div>
+</section>
+
+<footer>Hecho con amor, para alguien que significa todo para mí ❤️</footer>
+
+<script>
+const razones = [
+    "Porque contigo puedo ser completamente yo.",
+    "Porque tu forma de ser me conquistó sin que lo planeara.",
+    "Porque me gusta la persona que soy cuando estoy contigo.",
+    "Porque nunca necesito fingir frente a ti.",
+    "Porque haces que mostrarme tal como soy se sienta natural.",
+    "Porque admiro muchas partes de tu personalidad.",
+    "Porque tienes una manera de ser que no cambiaría por otra.",
+    "Porque tus imperfecciones también forman parte de quien amo.",
+    "Porque no necesito que seas perfecta para quererte.",
+    "Porque me encanta seguir descubriendo nuevas partes de ti.",
+    "Porque tu sonrisa puede cambiar mi ánimo en segundos.",
+    "Porque me encanta imaginarte sonriendo.",
+    "Porque una sonrisa tuya puede arreglarme un día difícil.",
+    "Porque me gusta cuando algo te causa una sonrisa inesperada.",
+    "Porque tu felicidad me contagia.",
+    "Porque me encanta cuando te ríes de mis tonterías.",
+    "Porque tu risa tiene un lugar especial en mis recuerdos.",
+    "Porque me gusta ser capaz de hacerte sonreír.",
+    "Porque quiero seguir coleccionando sonrisas tuyas.",
+    "Porque verte feliz siempre me parece bonito.",
+    "Porque todavía me emociona ver un mensaje tuyo.",
+    "Porque tu nombre en mi pantalla puede cambiarme el día.",
+    "Porque me gusta leer lo que me escribes.",
+    "Porque nunca me parece aburrido hablar contigo.",
+    "Porque me encanta cuando me cuentas cómo estuvo tu día.",
+    "Porque una conversación contigo puede convertirse en mi parte favorita del día.",
+    "Porque me gusta cuando apareces de repente para contarme algo.",
+    "Porque adoro esas conversaciones que empiezan con cualquier tontería.",
+    "Porque me encanta cuando terminamos hablando de temas completamente inesperados.",
+    "Porque podría quedarme conversando contigo durante horas.",
+    "Porque me gusta cuando preguntas cómo estoy.",
+    "Porque noto cuando te preocupas por mí.",
+    "Porque tus pequeños cuidados significan muchísimo.",
+    "Porque me gusta sentir que mi bienestar también te importa.",
+    "Porque quiero devolverte todo el cariño que me das.",
+    "Porque tus detalles nunca me parecen pequeños.",
+    "Porque recuerdo muchas veces en que intentaste hacerme sentir mejor.",
+    "Porque me gusta saber que puedo contar contigo.",
+    "Porque quiero ser para ti el apoyo que tú has sido para mí.",
+    "Porque cuidar de ti me nace de manera natural.",
+    "Porque me gusta la confianza que hemos construido.",
+    "Porque valoro cada cosa que decides contarme.",
+    "Porque me honra que compartas conmigo tus pensamientos.",
+    "Porque quiero ser digno de tu confianza.",
+    "Porque contigo puedo hablar de cosas que normalmente guardaría para mí.",
+    "Porque quiero que puedas decirme lo que sientes sin miedo.",
+    "Porque quiero escucharte antes de juzgarte.",
+    "Porque quiero que podamos hablar incluso cuando algo sea difícil.",
+    "Porque respeto lo que me confías.",
+    "Porque quiero que nuestra confianza siga creciendo.",
+    "Porque la distancia no consiguió hacerte menos importante.",
+    "Porque aun lejos puedes hacerme sentir acompañado.",
+    "Porque nuestros kilómetros no pueden medir lo que siento por ti.",
+    "Porque aprendí que extrañar también demuestra cuánto importa alguien.",
+    "Porque cada conversación hace que la distancia se sienta un poco menor.",
+    "Porque sueño con el día en que podamos vernos frente a frente.",
+    "Porque quiero convertir nuestros 'algún día' en recuerdos reales.",
+    "Porque quiero que la distancia algún día sea solamente una parte de nuestra historia.",
+    "Porque esperar por un momento contigo hace que valga la pena.",
+    "Porque quiero abrazarte después de todo el tiempo que hemos esperado.",
+    "Porque quiero seguir construyendo recuerdos contigo.",
+    "Porque me emociona pensar en todo lo que todavía nos falta vivir.",
+    "Porque quiero conocer nuevas etapas de tu vida.",
+    "Porque quiero acompañarte mientras cumples tus sueños.",
+    "Porque me gustaría mirar atrás algún día y ver cuánto crecimos.",
+    "Porque quiero que nuestra historia tenga muchos capítulos más.",
+    "Porque quiero descubrir contigo lugares que todavía no conocemos.",
+    "Porque quiero compartir contigo experiencias que hoy solo imaginamos.",
+    "Porque quiero que nuestros futuros recuerdos tengan muchas historias bonitas.",
+    "Porque me ilusiona pensar en todo lo que podemos vivir.",
+    "Porque un pequeño detalle tuyo puede alegrarme muchísimo.",
+    "Porque recuerdo cosas que hiciste por mí aunque hayan parecido pequeñas.",
+    "Porque me gusta cuando recuerdas algo que te conté.",
+    "Porque me encanta cuando notas detalles de mí.",
+    "Porque tus gestos espontáneos suelen quedarse conmigo.",
+    "Porque me gusta cuando haces algo pensando en mí.",
+    "Porque una palabra tuya puede acompañarme durante todo el día.",
+    "Porque tus detalles tienen un significado especial para mí.",
+    "Porque me gusta descubrir esas pequeñas formas en que demuestras cariño.",
+    "Porque contigo aprendí que lo pequeño también puede ser enorme.",
+    "Porque me encantan nuestras bromas.",
+    "Porque me haces reír incluso cuando no lo estoy buscando.",
+    "Porque adoro nuestras conversaciones absurdas.",
+    "Porque contigo puedo pasar de una conversación seria a una tontería en segundos.",
+    "Porque me gustan las cosas que solo nosotros encontramos graciosas.",
+    "Porque nuestras ocurrencias merecen sus propios recuerdos.",
+    "Porque me gusta cuando una conversación termina convirtiéndose en una anécdota.",
+    "Porque quiero seguir acumulando momentos en los que nos riamos juntos.",
+    "Porque contigo puedo disfrutar sin necesitar un plan perfecto.",
+    "Porque me gusta esa parte divertida que existe entre nosotros.",
+    "Porque también amo nuestras conversaciones profundas.",
+    "Porque me interesa conocer tu forma de pensar.",
+    "Porque me gusta escuchar tus opiniones aunque sean diferentes a las mías.",
+    "Porque me haces pensar desde perspectivas nuevas.",
+    "Porque quiero conocer las cosas que realmente te importan.",
+    "Porque me gusta descubrir qué sueños tienes para tu vida.",
+    "Porque quiero entender mejor lo que sientes.",
+    "Porque me interesa conocer tus miedos y tus fortalezas.",
+    "Porque quiero que puedas mostrarme incluso tus partes más sensibles.",
+    "Porque conocer tu mundo interior me parece algo precioso.",
+    "Porque te elegiría incluso en un día difícil.",
+    "Porque quiero seguir eligiéndote cada día.",
+    "Porque no quiero que mi amor dependa de que todo salga perfecto.",
+    "Porque quiero cuidar lo que tenemos.",
+    "Porque quiero demostrar con acciones lo que siento.",
+    "Porque quiero aprender de nuestros errores.",
+    "Porque quiero mejorar contigo sin perder nuestra esencia.",
+    "Porque quiero que podamos superar juntos los momentos complicados.",
+    "Porque quiero construir una relación que nos haga bien a los dos.",
+    "Porque cuando pienso en elegir, mi corazón vuelve a ti.",
+    "Porque nuestros recuerdos tienen un lugar especial en mi corazón.",
+    "Porque me gusta recordar cómo empezó nuestra historia.",
+    "Porque cada etapa que hemos vivido tiene algo que la hace especial.",
+    "Porque nadie más vivió exactamente nuestros momentos.",
+    "Porque hay conversaciones nuestras que todavía recuerdo con cariño.",
+    "Porque algunas palabras tuyas se quedaron guardadas en mi memoria.",
+    "Porque pensar en lo que hemos vivido puede hacerme sonreír.",
+    "Porque quiero seguir creando recuerdos que algún día extrañemos.",
+    "Porque nuestra historia tiene detalles que solo nosotros entendemos.",
+    "Porque me alegra haber coincidido contigo.",
+    "Porque me nace decirte cuánto te amo.",
+    "Porque mi cariño por ti no cabe en una sola frase.",
+    "Porque hay sentimientos que contigo aprendí a sentir.",
+    "Porque cuando intento explicar lo importante que eres, siempre siento que faltan palabras.",
+    "Porque te has convertido en alguien demasiado importante para mí.",
+    "Porque amarte se siente natural.",
+    "Porque mi corazón encontró algo especial en ti.",
+    "Porque quiero que siempre sepas lo mucho que significas para mí.",
+    "Porque no necesito una razón perfecta para amarte.",
+    "Porque simplemente eres tú y eso me basta.",
+    "Porque quiero estar para ti cuando tengas un día difícil.",
+    "Porque quiero celebrar tus logros como si fueran pequeños triunfos compartidos.",
+    "Porque quiero escucharte cuando necesites desahogarte.",
+    "Porque quiero acompañarte cuando algo te dé miedo.",
+    "Porque quiero recordarte lo valiosa que eres cuando tú lo olvides.",
+    "Porque quiero ser una voz que te anime a seguir.",
+    "Porque me hace feliz verte avanzar.",
+    "Porque quiero que puedas apoyarte en mí cuando lo necesites.",
+    "Porque quiero respetar tus tiempos y tus límites.",
+    "Porque quiero que sepas que tu bienestar me importa.",
+    "Porque quiero compartir contigo mañanas tranquilas.",
+    "Porque quiero compartir contigo noches largas de conversación.",
+    "Porque quiero caminar a tu lado sin mirar la hora.",
+    "Porque quiero compartir comidas contigo.",
+    "Porque quiero ver películas contigo.",
+    "Porque quiero escuchar música contigo.",
+    "Porque quiero conocer lugares nuevos de tu mano.",
+    "Porque quiero tomar fotografías de momentos que vivamos juntos.",
+    "Porque quiero regalarte detalles sin necesitar una fecha especial.",
+    "Porque quiero tener días sencillos contigo que terminen siendo inolvidables.",
+    "Porque me encanta tu manera particular de ver algunas cosas.",
+    "Porque tus ocurrencias siempre pueden sorprenderme.",
+    "Porque tienes una personalidad que deja huella.",
+    "Porque me gusta descubrir cómo reaccionas ante cosas nuevas.",
+    "Porque me encanta cuando te emocionas hablando de algo que te gusta.",
+    "Porque quiero conocer todos tus pequeños hábitos.",
+    "Porque me gusta aprender cómo funciona tu manera de pensar.",
+    "Porque nunca quiero dejar de descubrir cosas nuevas de ti.",
+    "Porque incluso después de conocerte sigo encontrando detalles que admiro.",
+    "Porque todavía consigues sorprenderme.",
+    "Porque agradezco haber coincidido contigo.",
+    "Porque agradezco cada conversación que nos acercó.",
+    "Porque agradezco cada recuerdo que hemos creado.",
+    "Porque agradezco cada vez que me has hecho sonreír.",
+    "Porque agradezco la confianza que me has dado.",
+    "Porque agradezco poder llamarte mi pareja.",
+    "Porque agradezco que formes parte de mi vida.",
+    "Porque agradezco todo lo que he aprendido contigo.",
+    "Porque agradezco las pequeñas cosas que haces por mí.",
+    "Porque agradezco que seas tú.",
+    "Porque nadie podría ocupar exactamente tu lugar.",
+    "Porque entre tantas personas mi corazón encontró el tuyo.",
+    "Porque tu nombre tiene un significado especial para mí.",
+    "Porque Daniela dejó de ser solamente un nombre para mí.",
+    "Porque cuando pienso en alguien especial, pienso en ti.",
+    "Porque eres una persona que quiero conocer profundamente.",
+    "Porque eres una persona que quiero cuidar y respetar.",
+    "Porque eres una persona que quiero ver feliz.",
+    "Porque eres alguien a quien quiero elegir una y otra vez.",
+    "Porque eres mi Daniela.",
+    "Porque me encanta escucharte hablar de las cosas que te apasionan.",
+    "Porque tu voz puede tranquilizarme.",
+    "Porque podría escucharte contar una historia una y otra vez.",
+    "Porque me gusta reconocer tus cambios de tono cuando algo te emociona.",
+    "Porque tu manera de contar las cosas tiene algo que me encanta.",
+    "Porque me gusta cuando tu voz aparece en uno de mis momentos favoritos.",
+    "Porque quiero escuchar muchas historias más de tu vida.",
+    "Porque quiero escuchar cómo celebras tus futuras buenas noticias.",
+    "Porque quiero compartir conversaciones que algún día recordemos con cariño.",
+    "Porque nunca quiero que se acaben nuestras charlas.",
+    "Porque tu presencia se siente incluso cuando no estás físicamente cerca.",
+    "Porque pensar en ti puede hacerme sentir acompañado.",
+    "Porque tenerte en mi vida cambió mis días.",
+    "Porque desde que llegaste hay momentos que tienen otro significado.",
+    "Porque me gusta saber que existes en algún lugar del mundo.",
+    "Porque me tranquiliza saber que puedo hablar contigo.",
+    "Porque haces que algunos días pesen menos.",
+    "Porque tu existencia se convirtió en una parte bonita de mi rutina.",
+    "Porque me gusta encontrar un espacio para ti incluso en días ocupados.",
+    "Porque tenerte cerca de mi corazón me hace feliz.",
+    "Porque contigo he aprendido que escuchar también es amar.",
+    "Porque contigo entendí que la confianza se construye.",
+    "Porque nuestra relación me ha enseñado cosas sobre mí mismo.",
+    "Porque me has hecho mirar algunas situaciones de otra manera.",
+    "Porque quiero seguir aprendiendo de lo que vivimos.",
+    "Porque quiero que nuestros errores nos enseñen y no nos separen.",
+    "Porque me gusta crecer sin dejar de ser yo mismo a tu lado.",
+    "Porque quiero aprender a quererte cada vez mejor.",
+    "Porque quiero mejorar la manera en que te acompaño.",
+    "Porque me gusta que nuestra historia también me haga crecer.",
+    "Porque todavía quiero sorprenderte con pequeños detalles.",
+    "Porque me encanta imaginar tu reacción ante una sorpresa bonita.",
+    "Porque quiero descubrir qué cosas te emocionan más.",
+    "Porque quiero aprender tus gustos para sorprenderte mejor.",
+    "Porque me gustaría regalarte algo un día solo porque pensé en ti.",
+    "Porque quiero convertir un día cualquiera en un recuerdo especial.",
+    "Porque me gusta imaginar una sonrisa tuya causada por algo que hice.",
+    "Porque quiero que algunas de tus sorpresas favoritas vengan de mí.",
+    "Porque todavía tenemos muchísimas primeras veces por vivir.",
+    "Porque me emociona no saber todavía todos los recuerdos que nos esperan.",
+    "Porque respeto la persona que eres.",
+    "Porque respeto tus decisiones.",
+    "Porque respeto tus sueños aunque sean distintos de los míos.",
+    "Porque respeto tus tiempos.",
+    "Porque respeto tus límites.",
+    "Porque quiero que tengas espacio para ser tú misma.",
+    "Porque no quiero cambiarte para que encajes en mis expectativas.",
+    "Porque quiero que nuestra relación tenga libertad además de amor.",
+    "Porque quiero que podamos crecer cada uno sin dejar de acompañarnos.",
+    "Porque admirarte también significa respetarte.",
+    "Porque me encanta imaginar un abrazo contigo.",
+    "Porque quiero algún día decirte 'te amo' mirándote a los ojos.",
+    "Porque quiero caminar tomados de la mano.",
+    "Porque quiero darte flores sin necesitar una ocasión.",
+    "Porque quiero tener una fotografía abrazándote.",
+    "Porque quiero vivir contigo esos momentos que ahora imaginamos.",
+    "Porque quiero poder estar cerca cuando necesites un abrazo.",
+    "Porque me gusta imaginar nuestras primeras citas en persona.",
+    "Porque quiero que algún día la pantalla deje de estar entre nosotros.",
+    "Porque quiero convertir el cariño escrito en momentos reales.",
+    "Porque me gusta conocer tus pequeñas costumbres.",
+    "Porque me encanta descubrir qué haces cuando estás feliz.",
+    "Porque me gusta saber qué cosas haces cuando estás nerviosa.",
+    "Porque quiero aprender qué te ayuda cuando estás cansada.",
+    "Porque me gusta notar esas pequeñas cosas que te hacen ser tú.",
+    "Porque cada hábito nuevo que descubro me acerca un poco más a ti.",
+    "Porque me gusta reconocer tus formas de expresar cariño.",
+    "Porque me gusta saber cuándo algo realmente te entusiasma.",
+    "Porque quiero conocer tus rutinas sin dejar de sorprenderme con ellas.",
+    "Porque hasta tus pequeñas manías pueden parecerme adorables.",
+    "Porque quiero conocer tus sueños más grandes.",
+    "Porque quiero escuchar tus planes para el futuro.",
+    "Porque quiero verte conseguir aquello que te propongas.",
+    "Porque quiero celebrar contigo cuando alcances una meta.",
+    "Porque quiero recordarte todo lo que eres capaz de hacer.",
+    "Porque quiero verte sentir orgullo de ti misma.",
+    "Porque quiero animarte cuando dudes de tus capacidades.",
+    "Porque quiero acompañarte en las etapas importantes de tu vida.",
+    "Porque me emociona imaginarte cumpliendo tus sueños.",
+    "Porque quiero que sepas que creo en ti.",
+    "Porque me gusta tener cosas que solamente nosotros entendemos.",
+    "Porque me encantan nuestras pequeñas formas de comunicarnos.",
+    "Porque quiero que sigamos creando palabras y bromas nuestras.",
+    "Porque me gusta que nuestra historia tenga detalles únicos.",
+    "Porque quiero que tengamos lugares que algún día podamos llamar nuestros.",
+    "Porque quiero que existan canciones que siempre nos recuerden.",
+    "Porque quiero que tengamos fotografías llenas de historias.",
+    "Porque quiero que creemos tradiciones propias.",
+    "Porque quiero que haya recuerdos que nos hagan reír durante años.",
+    "Porque quiero construir un pequeño mundo de recuerdos contigo.",
+    "Porque quiero seguir felicitándote por tus logros.",
+    "Porque quiero seguir celebrando tus cumpleaños.",
+    "Porque quiero seguir preguntándote cómo estuvo tu día dentro de muchos años.",
+    "Porque quiero seguir escuchando tus nuevas historias.",
+    "Porque quiero descubrir cómo cambiarán nuestros sueños con el tiempo.",
+    "Porque quiero ver en quién te convertirás.",
+    "Porque quiero conocerte en cada nueva etapa.",
+    "Porque quiero seguir sintiendo ilusión por nosotros.",
+    "Porque quiero que nuestra historia envejezca llena de recuerdos.",
+    "Porque quiero que algún día podamos decir que valió la pena todo lo que construimos.",
+    "Porque quiero que conmigo puedas sentirte tranquila.",
+    "Porque quiero ser un lugar seguro para tus conversaciones.",
+    "Porque quiero escucharte sin hacerte sentir mal por sentir.",
+    "Porque quiero acompañarte cuando simplemente necesites compañía.",
+    "Porque quiero aprender cuándo necesitas consejos y cuándo necesitas que te escuche.",
+    "Porque quiero respetar tus momentos de silencio.",
+    "Porque quiero ayudarte a sentirte menos sola en los días pesados.",
+    "Porque quiero que sepas que tus emociones importan.",
+    "Porque quiero tratarte con paciencia y cariño.",
+    "Porque quiero que nuestro amor sea también un espacio de tranquilidad.",
+    "Porque admiro tu manera de seguir adelante.",
+    "Porque admiro la fuerza que tienes para superar dificultades.",
+    "Porque admiro las cosas que te apasionan.",
+    "Porque admiro cuando defiendes aquello en lo que crees.",
+    "Porque admiro tu capacidad de aprender.",
+    "Porque admiro la forma en que puedes preocuparte por quienes quieres.",
+    "Porque admiro esos detalles que muestran quién eres.",
+    "Porque admiro muchas cosas que quizá tú misma no notas.",
+    "Porque me haces encontrar belleza en aspectos cotidianos.",
+    "Porque cada día puedo encontrar algo nuevo que admirar de ti.",
+    "Porque me encanta escuchar tus historias de cuando eras más pequeña.",
+    "Porque quiero conocer las historias detrás de tus recuerdos.",
+    "Porque me gusta cuando me cuentas algo que no sabía de ti.",
+    "Porque quiero conocer esas anécdotas que te hacen reír.",
+    "Porque me interesa saber cómo llegaste a ser quien eres.",
+    "Porque cada historia tuya me ayuda a conocerte mejor.",
+    "Porque quiero escuchar tus recuerdos favoritos.",
+    "Porque quiero conocer también los recuerdos que te hicieron crecer.",
+    "Porque me gusta imaginarte viviendo esas historias antes de conocerme.",
+    "Porque quiero que algún día tengamos muchísimas historias nuevas que contar.",
+    "Porque algunas canciones ahora me hacen pensar en ti.",
+    "Porque me gusta descubrir música que podría recordarnos.",
+    "Porque quiero compartir canciones contigo.",
+    "Porque quiero encontrar una canción que sientamos completamente nuestra.",
+    "Porque me gusta imaginarte escuchando una canción que te recomendé.",
+    "Porque quiero conocer las canciones que te hacen sentir algo especial.",
+    "Porque la música puede guardar recuerdos y quiero guardar algunos contigo.",
+    "Porque quiero que ciertas melodías nos lleven de vuelta a momentos bonitos.",
+    "Porque me gusta cuando una canción termina teniendo una historia detrás.",
+    "Porque quiero llenar nuestra historia de pequeñas canciones.",
+    "Porque quiero conocer tus lugares favoritos.",
+    "Porque quiero visitar contigo algún lugar que sea importante para ti.",
+    "Porque quiero descubrir rincones nuevos a tu lado.",
+    "Porque me gusta imaginar lugares que algún día podamos llamar nuestros.",
+    "Porque quiero caminar contigo por lugares que nunca hemos visto.",
+    "Porque quiero tener una fotografía contigo en un lugar especial.",
+    "Porque quiero descubrir qué paisajes te gustan más.",
+    "Porque quiero conocer los lugares que te hacen sentir tranquila.",
+    "Porque quiero convertir algunos lugares comunes en recuerdos especiales contigo.",
+    "Porque quiero que algún día ciertos lugares nos recuerden automáticamente al otro.",
+    "Porque quiero compartir una comida contigo y convertirla en un recuerdo bonito.",
+    "Porque quiero descubrir cuáles son tus comidas favoritas.",
+    "Porque quiero probar algo nuevo contigo.",
+    "Porque me gustaría cocinar algo para ti algún día.",
+    "Porque quiero descubrir qué postre elegirías siempre.",
+    "Porque me gustaría sorprenderte con algo que sé que te gusta.",
+    "Porque hasta una comida sencilla podría ser especial contigo.",
+    "Porque quiero tener algún lugar favorito para comer juntos.",
+    "Porque me gusta imaginar conversaciones nuestras alrededor de una mesa.",
+    "Porque quiero que tengamos recuerdos asociados a sabores y lugares.",
+    "Porque me gusta cuando podemos divertirnos sin complicarnos.",
+    "Porque quiero jugar contigo y terminar riéndonos.",
+    "Porque me encantan nuestras ocurrencias.",
+    "Porque quiero seguir teniendo momentos espontáneos contigo.",
+    "Porque me gusta cuando una pequeña tontería termina siendo un recuerdo.",
+    "Porque contigo puedo dejar de tomarme todo tan en serio.",
+    "Porque quiero seguir descubriendo tu lado más juguetón.",
+    "Porque me gusta cuando hacemos algo simplemente porque nos divierte.",
+    "Porque quiero que nunca nos falten momentos para reír.",
+    "Porque la diversión también es una forma bonita de compartir.",
+    "Porque escribirte lo que siento nunca parece suficiente.",
+    "Porque quiero que estas palabras puedan hacerte sonreír.",
+    "Porque me gusta poner en palabras lo importante que eres para mí.",
+    "Porque quiero que puedas volver a leer esto cuando me extrañes.",
+    "Porque quiero dejarte recuerdos escritos además de recuerdos vividos.",
+    "Porque me gusta imaginar tu reacción mientras lees mis palabras.",
+    "Porque algunas cosas merecen ser dichas más de una vez.",
+    "Porque quiero que puedas guardar estas palabras.",
+    "Porque escribirte me hace pensar en todo lo que amo de ti.",
+    "Porque esta lista existe porque tú significas muchísimo para mí.",
+    "Porque después de 500 razones todavía encontraría otra.",
+    "Porque 500 razones siguen siendo pocas para todo lo que siento.",
+    "Porque algunas razones no pueden escribirse, solo sentirse.",
+    "Porque hay detalles tuyos que todavía no sé cómo explicar.",
+    "Porque el amor que siento no cabe en un contador.",
+    "Porque esta lista puede terminar, pero mis razones no.",
+    "Porque cada día puede regalarme una razón nueva.",
+    "Porque conocerte sigue dándome motivos para sonreír.",
+    "Porque podría comenzar otra lista y volvería a llenarla contigo.",
+    "Porque la razón que resume todas las demás es que te amo.",
+    "Porque me gusta imaginar un buenos días tuyo.",
+    "Porque quiero que algún día podamos despertar cerca.",
+    "Porque me gustaría comenzar mañanas contigo.",
+    "Porque quiero saber cómo amaneciste.",
+    "Porque me gusta pensar que tu día también empieza con sueños.",
+    "Porque quiero compartir algún desayuno contigo.",
+    "Porque una mañana sencilla a tu lado me parecería especial.",
+    "Porque quiero que algún día los buenos días sean en persona.",
+    "Porque me emociona imaginar nuestras primeras mañanas juntos.",
+    "Porque quiero llenar futuros días de pequeños buenos momentos.",
+    "Porque me gusta desearte buenas noches.",
+    "Porque quiero ser una de las últimas personas con las que hables algún día.",
+    "Porque me gusta pensar en ti antes de dormir.",
+    "Porque quiero escuchar tus historias de noche.",
+    "Porque algunas de nuestras conversaciones nocturnas se sienten especiales.",
+    "Porque quiero compartir noches tranquilas contigo.",
+    "Porque quiero poder decirte buenas noches estando a tu lado.",
+    "Porque me gusta imaginar conversaciones que se alargan hasta tarde.",
+    "Porque quiero que algún día nuestras noches tengan recuerdos propios.",
+    "Porque incluso despedirme de ti antes de dormir puede sentirse bonito.",
+    "Porque quiero ver tu reacción cuando nos encontremos.",
+    "Porque quiero descubrir cómo se siente abrazarte por primera vez en persona.",
+    "Porque quiero caminar contigo después de esperarlo tanto.",
+    "Porque quiero poder mirarte sin una pantalla de por medio.",
+    "Porque quiero escuchar tu voz estando justo a tu lado.",
+    "Porque quiero compartir un día completo contigo.",
+    "Porque quiero guardar cada detalle de nuestro primer encuentro.",
+    "Porque quiero que ese encuentro sea el primero de muchos.",
+    "Porque quiero que la espera termine convertida en un recuerdo bonito.",
+    "Porque pensar en conocerte en persona me llena de ilusión.",
+    "Porque me gusta cuando recuerdas pequeños detalles de nuestras conversaciones.",
+    "Porque me encanta descubrir una nueva cosa que te gusta.",
+    "Porque noto cuando algo te hace especialmente feliz.",
+    "Porque quiero aprender cuáles son tus pequeños gustos.",
+    "Porque me gusta sorprenderte recordando cosas que me contaste.",
+    "Porque tus detalles hacen que conocerte sea más bonito.",
+    "Porque cada pequeña cosa que descubro de ti suma una nueva parte a mi cariño.",
+    "Porque me gusta guardar mentalmente las cosas que te hacen sonreír.",
+    "Porque quiero seguir prestando atención a esas pequeñas señales tuyas.",
+    "Porque contigo aprendí a mirar con más cariño los detalles.",
+    "Porque me gusta la ternura que tienes en ciertos momentos.",
+    "Porque tus gestos de cariño hablan mucho de ti.",
+    "Porque me gusta cuando eres considerada con alguien.",
+    "Porque admiro cuando intentas ayudar a una persona que quieres.",
+    "Porque me gusta ver la parte dulce de tu personalidad.",
+    "Porque tu forma de cuidar a quienes quieres dice mucho de tu corazón.",
+    "Porque me encanta cuando haces sentir importante a alguien.",
+    "Porque me gusta esa sensibilidad que aparece en tus pequeños gestos.",
+    "Porque admiro las formas en que expresas cariño.",
+    "Porque me hace feliz conocer ese lado tuyo.",
+    "Porque siempre quiero saber qué estás pensando.",
+    "Porque me da curiosidad conocer tus nuevas ideas.",
+    "Porque me interesa descubrir qué te entusiasma últimamente.",
+    "Porque quiero conocer las cosas que estás aprendiendo.",
+    "Porque me gusta preguntarte por lo que te interesa.",
+    "Porque cada respuesta tuya puede enseñarme algo nuevo.",
+    "Porque quiero descubrir qué cosas te hacen cambiar de opinión.",
+    "Porque me encanta cuando me cuentas algo que acabas de descubrir.",
+    "Porque tu curiosidad me parece contagiosa.",
+    "Porque conocer tu manera de mirar el mundo nunca me aburre.",
+    "Porque me gusta imaginar un espacio que algún día podamos sentir nuestro.",
+    "Porque quiero tener pequeños rincones que nos recuerden momentos juntos.",
+    "Porque me gusta imaginar fotografías nuestras en algún lugar especial.",
+    "Porque quiero compartir tardes tranquilas en un lugar que nos guste.",
+    "Porque quiero tener recuerdos cotidianos contigo.",
+    "Porque me emociona imaginar nuestras propias pequeñas rutinas.",
+    "Porque quiero descubrir qué cosas harían especial un lugar para nosotros.",
+    "Porque quiero que algún día lo cotidiano también tenga historias nuestras.",
+    "Porque me gusta pensar en un futuro lleno de momentos sencillos.",
+    "Porque quiero que la felicidad también pueda estar en lo cotidiano.",
+    "Porque quiero vivir aventuras contigo.",
+    "Porque quiero perderme contigo en un lugar nuevo y terminar encontrando algo bonito.",
+    "Porque quiero hacer viajes que después recordemos riéndonos.",
+    "Porque quiero probar actividades que ninguno de los dos haya hecho.",
+    "Porque quiero descubrir paisajes contigo.",
+    "Porque quiero tener días que comiencen sin saber exactamente cómo terminarán.",
+    "Porque quiero coleccionar experiencias contigo.",
+    "Porque quiero que algunas de nuestras mejores historias comiencen con un '¿y si hacemos esto?'.",
+    "Porque quiero atreverme a vivir cosas nuevas a tu lado.",
+    "Porque quiero que la curiosidad nos lleve a recuerdos inolvidables.",
+    "Porque quiero aprender a tener paciencia contigo.",
+    "Porque quiero darte el tiempo que necesites.",
+    "Porque quiero escuchar antes de responder cuando algo sea importante.",
+    "Porque quiero aprender de las diferencias entre nosotros.",
+    "Porque quiero entender tus tiempos sin presionarte.",
+    "Porque quiero construir contigo sin apresurar nuestra historia.",
+    "Porque quiero que podamos hablar después de calmarnos cuando sea necesario.",
+    "Porque quiero elegir el diálogo antes que el orgullo.",
+    "Porque quiero aprender a reconocer cuándo debo escuchar más.",
+    "Porque quiero que mi forma de amarte también tenga paciencia.",
+    "Porque quiero cuidar la confianza que existe entre nosotros.",
+    "Porque quiero que mis acciones sean coherentes con lo que te digo.",
+    "Porque quiero ser una persona en la que puedas confiar.",
+    "Porque quiero cuidar nuestra relación incluso cuando nadie esté mirando.",
+    "Porque quiero respetar lo que hemos construido.",
+    "Porque quiero ser sincero contigo.",
+    "Porque quiero hablar contigo cuando algo me preocupe en vez de alejarme.",
+    "Porque quiero enfrentar los problemas sin abandonar lo importante.",
+    "Porque quiero que puedas reconocer mi compromiso con nosotros.",
+    "Porque quiero demostrarte con hechos que lo nuestro me importa.",
+    "Porque todavía tengo esperanza en todos los momentos que nos faltan.",
+    "Porque me ilusiona todo lo que podemos llegar a vivir.",
+    "Porque quiero que nuestros sueños tengan oportunidades de hacerse realidad.",
+    "Porque me gusta imaginar futuros posibles contigo.",
+    "Porque cada nuevo día puede traer un recuerdo bonito.",
+    "Porque quiero seguir teniendo motivos para ilusionarme contigo.",
+    "Porque me gusta pensar que todavía nos esperan muchas sorpresas.",
+    "Porque quiero que el futuro nos encuentre con muchas historias nuevas.",
+    "Porque me emociona imaginar todo lo que aún no conocemos.",
+    "Porque quiero seguir mirando hacia adelante contigo.",
+    "Porque si volviera al comienzo, volvería a acercarme a ti.",
+    "Porque entre tantas posibilidades me alegra que hayas sido tú.",
+    "Porque volvería a escuchar tus primeras historias.",
+    "Porque volvería a descubrir tu forma de ser.",
+    "Porque volvería a esperar tus mensajes.",
+    "Porque volvería a sonreír por las mismas pequeñas cosas tuyas.",
+    "Porque volvería a construir confianza contigo.",
+    "Porque volvería a querer conocer cada parte de tu mundo.",
+    "Porque volvería a elegir nuestra conexión.",
+    "Porque volvería a elegirte a ti.",
+    "Porque nunca voy a olvidar el día que te vi.",
+    "Porque todavía sonrío cuando recuerdo esa salida al cine.",
+    "Porque aún pienso en nuestro primer besito.",
+    "Porque siempre voy a recordar cuando me contaste tus problemas y confiaste en mí.",
+    "Porque amo todo de ti, incluso aquello que nunca antes había amado de alguien.",
+    "Porque quiero volver a vivir miles de risas junto a ti.",
+    "Porque me haces reír en los momentos más bobos.",
+    "Porque me di cuenta de que contigo podía ser realmente diferente.",
+    "Porque no puedo sacarme de la cabeza cuando me dices algo lindo.",
+    "Porque nuestra historia tiene momentos que nadie más podría entender como nosotros."
+];
+
+const TOTAL = razones.length;
+if (TOTAL !== 500) console.error("La lista debe tener exactamente 500 razones. Tiene:", TOTAL);
+
+let currentReason = 0;
+const current = document.getElementById("current");
+const progress = document.getElementById("progress");
+const reasonNumber = document.getElementById("reasonNumber");
+const reasonText = document.getElementById("reasonText");
+const reasonCard = document.getElementById("reasonCard");
+const reasonButton = document.getElementById("reasonButton");
+
+function entrar() {
+    document.getElementById("main").scrollIntoView({behavior:"smooth"});
+}
+
+function nextReason() {
+    if (currentReason >= TOTAL) {
+        showFinal();
+        return;
+    }
+    const reason = razones[currentReason];
+    currentReason++;
+    current.textContent = currentReason;
+    reasonNumber.textContent = "Razón #" + currentReason;
+    reasonText.textContent = reason;
+    reasonCard.classList.remove("change-animation");
+    void reasonCard.offsetWidth;
+    reasonCard.classList.add("change-animation");
+    progress.style.width = ((currentReason / TOTAL) * 100) + "%";
+    reasonButton.textContent = currentReason === TOTAL
+        ? "Descubrir la sorpresa ❤️"
+        : "Descubrir otra razón ❤️";
+}
+
+function showFinal() {
+    const finalSection = document.getElementById("final");
+    finalSection.classList.add("show");
+    finalSection.scrollIntoView({behavior:"smooth"});
+    createHeartExplosion();
+}
+
+function createBackgroundHearts() {
+    const container = document.getElementById("hearts");
+    const symbols = ["♡","♥","❤","💕"];
+    for (let i=0;i<25;i++) {
+        const heart = document.createElement("div");
+        heart.className="heart";
+        heart.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+        heart.style.left=Math.random()*100+"%";
+        heart.style.fontSize=(12+Math.random()*22)+"px";
+        heart.style.animationDuration=(8+Math.random()*12)+"s";
+        heart.style.animationDelay=Math.random()*10+"s";
+        container.appendChild(heart);
+    }
+}
+
+function createHeartExplosion() {
+    const container = document.getElementById("hearts");
+    for (let i=0;i<45;i++) {
+        const heart=document.createElement("div");
+        heart.className="heart";
+        heart.textContent="❤️";
+        heart.style.left=Math.random()*100+"%";
+        heart.style.fontSize=(15+Math.random()*25)+"px";
+        heart.style.animationDuration=(4+Math.random()*6)+"s";
+        container.appendChild(heart);
+    }
+}
+
+createBackgroundHearts();
+</script>
+</body>
+</html>
