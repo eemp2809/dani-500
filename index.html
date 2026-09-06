@@ -1,126 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>500 razones por las cuales te amo ❤️</title>
+<meta name="theme-color" content="#160c18">
+<title>Para Daniela ❤️</title>
 <style>
-:root{--rosa-claro:#fff0f4;--rosa:#f8c8d8;--rosa-fuerte:#e98da9;--vino:#8f304f;--rojo:#c94b67;--blanco:#fffdfd;--texto:#542b38;--sombra:rgba(143,48,79,.15)}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at top left,#fff7f9,transparent 40%),linear-gradient(135deg,#fff5f7,#ffe8ef);color:var(--texto);overflow-x:hidden}
-.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-.heart{position:absolute;bottom:-50px;color:rgba(201,75,103,.18);font-size:20px;animation:floatHeart linear infinite}
-@keyframes floatHeart{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}
-.welcome{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;position:relative;z-index:1}
-.welcome-content{max-width:800px;animation:appear 1.5s ease}
-@keyframes appear{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.small-title{letter-spacing:4px;text-transform:uppercase;font-size:.8rem;color:var(--vino);margin-bottom:20px}
-.welcome h1,.section-title,.special h2,.final h2{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--vino)}
-.welcome h1{font-size:clamp(3rem,8vw,6.5rem);line-height:1.05;margin-bottom:25px}
-.welcome p{font-size:1.15rem;max-width:600px;margin:auto;line-height:1.8;color:#744653}
-button{cursor:pointer}
-.enter-button,.reason-button{border:none;color:white;border-radius:50px;font-size:1rem;transition:.3s}
-.enter-button{margin-top:40px;background:var(--vino);padding:16px 32px;box-shadow:0 10px 30px var(--sombra)}
-.enter-button:hover,.reason-button:hover{transform:translateY(-4px);background:var(--rojo);box-shadow:0 15px 35px var(--sombra)}
-.main{min-height:100vh;padding:100px 20px;display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
-.section-title{text-align:center;font-size:clamp(2.3rem,6vw,4rem);margin-bottom:10px}
-.section-subtitle{text-align:center;color:#805360;margin-bottom:45px}
-.counter-container{width:min(650px,100%);margin-bottom:35px}
-.counter{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:.95rem}
-.counter strong{color:var(--vino);font-size:1.2rem}
-.progress{width:100%;height:9px;background:rgba(143,48,79,.12);border-radius:20px;overflow:hidden}
-.progress-bar{width:0;height:100%;background:linear-gradient(90deg,#e98da9,#8f304f);border-radius:inherit;transition:width .5s ease}
-.reason-card{width:min(700px,100%);min-height:300px;background:rgba(255,253,253,.8);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.8);border-radius:35px;padding:50px 35px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-shadow:0 20px 60px rgba(143,48,79,.12);position:relative;overflow:hidden}
-.reason-number{font-family:Georgia,serif;font-size:1rem;color:var(--rosa-fuerte);margin-bottom:20px}
-.reason-text{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.4rem,4vw,2.2rem);font-style:italic;line-height:1.5;color:var(--vino)}
-.reason-heart{font-size:3rem;margin-top:25px;animation:heartbeat 1.7s infinite}
-@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
-.change-animation{animation:changeReason .6s ease}
-@keyframes changeReason{0%{opacity:0;transform:translateY(15px) scale(.97)}100%{opacity:1;transform:translateY(0) scale(1)}}
-.reason-button{margin-top:35px;background:linear-gradient(135deg,#8f304f,#c94b67);padding:18px 35px;box-shadow:0 10px 30px rgba(143,48,79,.2)}
-.reason-button:active{transform:scale(.96)}
-.special{width:min(800px,100%);margin-top:120px;padding:60px 35px;text-align:center;background:rgba(255,255,255,.65);border-radius:35px;box-shadow:0 20px 60px rgba(143,48,79,.08)}
-.special h2{font-size:2.5rem;margin-bottom:30px}
-.special p,.final p{line-height:2;color:#704653;font-size:1.05rem}
-.final{display:none;min-height:100vh;padding:80px 25px;align-items:center;justify-content:center;text-align:center;position:relative;z-index:2}
-.final.show{display:flex;animation:appear 1.5s ease}
-.final-content{max-width:800px}
-.final-heart{font-size:6rem;animation:heartbeat 1.4s infinite;margin-bottom:30px}
-.final h2{font-size:clamp(2.5rem,7vw,5rem);margin-bottom:30px}
-footer{text-align:center;padding:40px 20px;color:#986878;position:relative;z-index:2}
-@media(max-width:600px){.welcome{padding:25px}.welcome h1{font-size:3.2rem}.welcome p{font-size:1rem}.reason-card{min-height:330px;padding:40px 25px;border-radius:25px}.reason-text{font-size:1.45rem}.special{padding:45px 25px}.special h2{font-size:2rem}}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#100910;color:#fff8fc;font-family:Montserrat,Arial,sans-serif;overflow-x:hidden}button{font:inherit}.hidden{display:none!important}
+#stars,#particles,#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;opacity:.5;animation:twinkle 3s ease-in-out infinite}.particle{position:absolute;width:5px;height:5px;border:1px solid rgba(255,205,228,.35);border-radius:50%;animation:float 14s linear infinite}.heart{position:absolute;color:#f8a9c7;opacity:.18;animation:heartFloat 13s linear infinite;filter:drop-shadow(0 0 8px rgba(255,120,180,.35))}
+.screen{position:relative;z-index:2;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:32px 18px;background:radial-gradient(circle at 50% 42%,rgba(128,45,91,.28),transparent 34%),radial-gradient(circle at 20% 20%,rgba(255,165,205,.08),transparent 25%),#100910}.hero{text-align:center;max-width:850px}.tiny{letter-spacing:.35em;text-transform:uppercase;font-size:11px;color:#e8b6cc;opacity:0;animation:rise 1.2s .2s forwards}.name{font-family:'Great Vibes',cursive;font-size:clamp(80px,18vw,170px);font-weight:400;line-height:.9;margin:24px 0 18px;color:#fff2f8;text-shadow:0 0 30px rgba(255,130,190,.32);opacity:0;animation:nameIn 1.7s .5s forwards}.subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(21px,4vw,30px);font-style:italic;color:#e9cad8;opacity:0;animation:rise 1.2s 1.15s forwards}.enter{margin-top:38px;opacity:0;animation:rise 1.2s 1.7s forwards}
+.btn{border:1px solid rgba(255,200,224,.45);background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,120,180,.12));color:#fff;border-radius:999px;padding:15px 27px;cursor:pointer;box-shadow:0 0 30px rgba(255,90,165,.13),inset 0 0 20px rgba(255,255,255,.04);transition:.35s}.btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 35px rgba(255,90,165,.22)}.scrollhint{margin-top:24px;font-size:10px;letter-spacing:.2em;color:#b99aaa;opacity:0;animation:rise 1s 2.3s forwards}
+#letterScreen{background:radial-gradient(circle at center,rgba(118,43,83,.32),transparent 40%),#120a12}.letter-wrap{width:min(720px,94vw);text-align:center}.envelope{width:min(390px,80vw);height:250px;margin:0 auto 28px;position:relative;cursor:pointer;perspective:900px}.env-back{position:absolute;inset:20px 0 0;background:linear-gradient(145deg,#7f3158,#4c1d38);border-radius:8px;box-shadow:0 25px 70px rgba(0,0,0,.45)}.env-flap{position:absolute;left:0;right:0;top:20px;height:135px;background:#9d416c;clip-path:polygon(0 0,100% 0,50% 78%);transform-origin:top;transition:1s;z-index:3}.env-front{position:absolute;inset:20px 0 0;background:linear-gradient(145deg,#8e365f,#5a2342);clip-path:polygon(0 0,50% 53%,100% 0,100% 100%,0 100%);z-index:4}.seal{position:absolute;z-index:5;left:50%;top:125px;transform:translateX(-50%);font-size:30px;filter:drop-shadow(0 3px 10px #30101f)}.envelope.open .env-flap{transform:rotateX(180deg)}.letter-paper{background:#fff8f4;color:#482838;border-radius:5px;padding:42px clamp(24px,6vw,65px);text-align:left;box-shadow:0 25px 80px rgba(0,0,0,.35);transform:translateY(25px);opacity:0;max-height:0;overflow:hidden;transition:1s}.letter-paper.show{max-height:900px;opacity:1;transform:none}.letter-paper h2{font-family:'Great Vibes',cursive;font-size:45px;font-weight:400;text-align:center;margin:0 0 25px;color:#7e3157}.letter-paper p{font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.55;margin:0 0 17px}.signature{font-family:'Great Vibes',cursive;font-size:32px;text-align:right;color:#7e3157;margin-top:25px}.continue{display:none;margin-top:25px}.continue.show{display:inline-block;animation:rise .8s}
+#bookScreen{padding:65px 14px 90px;background:radial-gradient(circle at 50% 0,rgba(124,46,87,.25),transparent 38%),#100910}.book-area{width:min(980px,96vw);margin:auto;position:relative}.topline{text-align:center;margin-bottom:30px}.topline .eyebrow{font-size:10px;letter-spacing:.35em;color:#d7a5ba}.topline h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(48px,9vw,78px);margin:8px 0;color:#fff0f7}.counter{color:#cfaabd;font-size:12px;letter-spacing:.14em}.progress{height:3px;background:rgba(255,255,255,.1);border-radius:5px;margin:15px auto;width:min(650px,90vw);overflow:hidden}.progress>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#9e3e69,#ffd0e4);box-shadow:0 0 12px #e58ab2;transition:width .7s}
+.book{position:relative;display:flex;justify-content:center;min-height:570px;perspective:1800px}.page{width:min(820px,94vw);min-height:570px;background:linear-gradient(100deg,#fffaf4,#f7eee9);color:#4b3040;position:relative;border-radius:4px 14px 14px 4px;box-shadow:0 30px 70px rgba(0,0,0,.42),inset 12px 0 25px rgba(90,40,55,.07);padding:clamp(35px,7vw,75px) clamp(28px,8vw,90px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}.page:before{content:'';position:absolute;left:28px;top:0;bottom:0;width:1px;background:rgba(126,49,87,.13)}.page:after{content:'♡';position:absolute;right:30px;top:25px;color:#c77a9d;font-size:25px}.page.turn{animation:pageTurn .9s cubic-bezier(.2,.7,.2,1)}.reason-number{font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:.25em;color:#9d5275;text-transform:uppercase}.reason{font-family:'Cormorant Garamond',serif;font-size:clamp(29px,5vw,47px);line-height:1.2;font-weight:500;margin:26px 0;color:#432a39;max-width:680px}.ornament{font-size:28px;color:#a65078;letter-spacing:.25em}.book-controls{display:flex;justify-content:center;gap:12px;margin-top:25px;flex-wrap:wrap}.hint{font-family:'Cormorant Garamond',serif;color:#c7a5b5;text-align:center;font-style:italic;margin:18px 0 0}.milestone{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;background:rgba(16,9,16,.68);backdrop-filter:blur(8px)}.milestone.show{display:flex}.milestone-card{width:min(520px,90vw);padding:45px 30px;text-align:center;border:1px solid rgba(255,192,220,.25);background:rgba(52,20,39,.92);border-radius:18px;box-shadow:0 25px 90px rgba(0,0,0,.5);animation:pop .6s}.milestone-card .big{font-family:'Great Vibes',cursive;font-size:65px;color:#ffd7e7}.milestone-card p{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.35;color:#f3dce7}
+#finalScreen{min-height:100svh;padding:80px 20px;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at center,rgba(132,42,87,.32),transparent 43%),#100910}.final-inner{width:min(800px,94vw)}.final-small{font-size:11px;letter-spacing:.35em;color:#d6a2b9}.final-title{font-family:'Great Vibes',cursive;font-size:clamp(65px,13vw,120px);font-weight:400;margin:20px 0;color:#fff2f8;text-shadow:0 0 35px rgba(255,130,190,.28)}.poem{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,4vw,29px);line-height:1.55;color:#efdbe4;font-style:italic;white-space:pre-line}.last-line{font-family:'Great Vibes',cursive;font-size:40px;color:#ffc9df;margin-top:45px}.restart{margin-top:28px}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:.9;transform:scale(1.5)}}@keyframes float{0%{transform:translateY(110vh) rotate(0);opacity:0}15%{opacity:.4}100%{transform:translateY(-20vh) rotate(360deg);opacity:0}}@keyframes heartFloat{0%{transform:translateY(110vh) scale(.7) rotate(0);opacity:0}15%{opacity:.2}100%{transform:translateY(-15vh) scale(1.2) rotate(30deg);opacity:0}}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@keyframes nameIn{from{opacity:0;transform:scale(.88);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}@keyframes pageTurn{0%{transform:rotateY(0);opacity:1}45%{transform:rotateY(-85deg);opacity:.35}100%{transform:rotateY(0);opacity:1}}@keyframes pop{from{opacity:0;transform:scale(.85) translateY(20px)}to{opacity:1;transform:none}}@media(max-width:600px){.envelope{height:205px}.env-flap{height:110px}.seal{top:105px}.letter-paper p{font-size:19px}.page{min-height:500px;padding:35px 28px}.page:before{left:17px}.reason{font-size:30px}.book{min-height:500px}}
 </style>
 </head>
 <body>
-<div class="hearts" id="hearts"></div>
-
-<section class="welcome" id="welcome">
-<div class="welcome-content">
-<div class="small-title">Para alguien muy especial</div>
-<h1>Para el amor<br>de mi vida</h1>
-<p>Hay cosas que son imposibles de explicar con palabras... pero aun así quiero intentarlo.</p>
-<button class="enter-button" onclick="entrar()">Entrar a nuestro pequeño mundo ❤️</button>
-</div>
+<div id="stars"></div><div id="particles"></div><div id="hearts"></div>
+<section id="home" class="screen">
+  <div class="hero">
+    <div class="tiny">Para la persona que amo</div>
+    <div class="name">Daniela</div>
+    <div class="subtitle">Tengo algo que quiero decirte...</div>
+    <div class="enter"><button class="btn" onclick="openLetterScreen()">♡ Tengo algo para ti ♡</button></div>
+    <div class="scrollhint">una pequeña historia hecha para ti</div>
+  </div>
 </section>
-
-<main class="main" id="main">
-<h2 class="section-title">500 razones por las cuales te amo</h2>
-<p class="section-subtitle">Una por una, porque tú mereces conocerlas todas.</p>
-
-<div class="counter-container">
-<div class="counter"><span>Razones descubiertas</span><strong><span id="current">0</span> / 500</strong></div>
-<div class="progress"><div class="progress-bar" id="progress"></div></div>
-</div>
-
-<div class="reason-card" id="reasonCard">
-<div class="reason-number" id="reasonNumber">Una pequeña razón...</div>
-<div class="reason-text" id="reasonText">Haz clic para descubrir por qué te amo.</div>
-<div class="reason-heart">❤️</div>
-</div>
-
-<button class="reason-button" id="reasonButton" onclick="nextReason()">Descubrir una razón ❤️</button>
-
-<section class="special">
-<h2>Si alguna vez olvidas cuánto te amo...</h2>
-<p>
-Quiero que recuerdes que estas 500 razones no son realmente todas las razones que tengo para amarte.
-<br><br>
-Son solamente 500 pequeñas partes de todo lo que siento por ti.
-<br><br>
-Amo tus detalles, tus palabras, tus ocurrencias, tu forma de hacerme sonreír y cada pequeño momento que hemos compartido.
-<br><br>
-Y si algún día llegamos a estas 500 razones, probablemente voy a encontrar otras 500.
-Porque contigo siempre voy a encontrar una razón más.
-<br><br>
-<strong>Y esta lista está hecha para ti, Daniela. ❤️</strong>
-</p>
+<section id="letterScreen" class="screen hidden">
+  <div class="letter-wrap">
+    <div class="tiny" style="opacity:1">Antes de comenzar...</div>
+    <h1 style="font-family:'Great Vibes';font-weight:400;font-size:58px;margin:12px 0 25px">Una carta para ti</h1>
+    <div class="envelope" id="envelope" onclick="openLetter()"><div class="env-back"></div><div class="env-flap"></div><div class="env-front"></div><div class="seal">❤️</div></div>
+    <div class="hint">Toca el sobre para abrirlo</div>
+    <div class="letter-paper" id="letterPaper">
+      <h2>Para mi niña</h2>
+      <p>Para mí, esto no significa simplemente una lista de razones por las cuales te amo, sino un sentimiento mucho más grande que solo eso.</p>
+      <p>Hago esto para demostrarte que yo te amo más y que nunca me vas a ganar, mi niña. No quiero que dejes de sonreír a mi lado, porque tú curas toda mi indigestión, todos mis problemas y todo mi estrés. Solo tú eres mi solución a todo; eres mi poción que me mejora todo.</p>
+      <p>Así que solo deseo que te guste esto y que no te aburras, porque para mí todo esto es muy importante. Y ojalá duremos toda la vida, incluso en los momentos más difíciles.</p>
+      <p>Te amo muchísimo, mi niña. ❤️</p>
+      <div class="signature">Con amor, para ti ♡</div>
+    </div>
+    <button id="startBtn" class="btn continue" onclick="startBook()">Abrir mis 500 razones →</button>
+  </div>
 </section>
-</main>
-
-<section class="final" id="final">
-<div class="final-content">
-<div class="final-heart">❤️</div>
-<h2>Llegamos a 500</h2>
-<p>
-Y aunque acabamos de llegar a 500 razones, quiero que sepas algo...
-<br><br>
-No necesito 500 razones para elegirte.
-<br><br>
-Te elegiría incluso si tuviera que empezar esta lista nuevamente desde cero.
-<br><br>
-Te elegiría hoy. Te elegiría mañana. Y te volvería a elegir una y otra vez.
-<br><br>
-Gracias por existir, gracias por llegar a mi vida y gracias por permitirme amarte.
-<br><br>
-<strong>Te amo, Daniela. ❤️</strong>
-</p>
-</div>
+<section id="bookScreen" class="hidden">
+  <div class="book-area">
+    <div class="topline"><div class="eyebrow">Una razón a la vez</div><h1>500 razones por las cuales te amo</h1><div class="counter" id="counter">0 / 500</div><div class="progress"><i id="progress"></i></div></div>
+    <div class="book"><div class="page" id="page"><div class="reason-number" id="reasonNumber">Cuando estés lista...</div><div class="ornament">♡　✦　♡</div><div class="reason" id="reason">Hay 500 pequeñas razones esperando para contarte cuánto te amo.</div><div class="ornament">♡　✦　♡</div></div></div>
+    <div class="book-controls"><button class="btn" id="reasonBtn" onclick="nextReason()">Descubrir la primera razón ❤️</button></div>
+    <div class="hint" id="bookHint">No tienes que descubrirlas todas de golpe. Disfruta cada página.</div>
+  </div>
 </section>
+<div class="milestone" id="milestone"><div class="milestone-card"><div class="big" id="milestoneBig">10 ♡</div><p id="milestoneText">Y apenas estamos comenzando...</p><button class="btn" onclick="closeMilestone()">Continuar ♡</button></div></div>
+<section id="finalScreen" class="hidden"><div class="final-inner"><div class="final-small">HAS LLEGADO HASTA AQUÍ</div><div class="final-title">500 razones.</div><div class="poem" id="poem">Este no es el fin, sino el inicio de una gran aventura,
+un mundo que nos queda por explorar,
+un sueño al cual ponerle tu nombre y apellido,
+sabiendo que a tu lado ya nada está perdido.
 
-<footer>Hecho con amor, para alguien que significa todo para mí ❤️</footer>
+Cuando te me acercas, haces que mi corazón se acelere como un motor,
+y tu voz sigue sonando en los ecos de mi refugio.
+Tú calmas mis tormentas con solo una mirada,
+y haces que el mundo entero se quede en la nada.
 
+Llegaste sin avisar,
+apareciste para desordenar y enamorar,
+te quedaste y me viniste a completar.
+
+Te sueño, te recuerdo y te ruego,
+que no te vayas, que te quedes luego...
+porque si te vas, te llevas mi fuego.</div><div class="last-line">Y aun así, siento que me faltaron miles. ❤️</div><div class="restart"><button class="btn" onclick="location.reload()">Volver al comienzo</button></div></div></section>
 <script>
 const razones = [
     "Porque contigo puedo ser completamente yo.",
@@ -624,77 +575,23 @@ const razones = [
     "Porque no puedo sacarme de la cabeza cuando me dices algo lindo.",
     "Porque nuestra historia tiene momentos que nadie más podría entender como nosotros."
 ];
-
-const TOTAL = razones.length;
-if (TOTAL !== 500) console.error("La lista debe tener exactamente 500 razones. Tiene:", TOTAL);
-
-let currentReason = 0;
-const current = document.getElementById("current");
-const progress = document.getElementById("progress");
-const reasonNumber = document.getElementById("reasonNumber");
-const reasonText = document.getElementById("reasonText");
-const reasonCard = document.getElementById("reasonCard");
-const reasonButton = document.getElementById("reasonButton");
-
-function entrar() {
-    document.getElementById("main").scrollIntoView({behavior:"smooth"});
-}
-
-function nextReason() {
-    if (currentReason >= TOTAL) {
-        showFinal();
-        return;
-    }
-    const reason = razones[currentReason];
-    currentReason++;
-    current.textContent = currentReason;
-    reasonNumber.textContent = "Razón #" + currentReason;
-    reasonText.textContent = reason;
-    reasonCard.classList.remove("change-animation");
-    void reasonCard.offsetWidth;
-    reasonCard.classList.add("change-animation");
-    progress.style.width = ((currentReason / TOTAL) * 100) + "%";
-    reasonButton.textContent = currentReason === TOTAL
-        ? "Descubrir la sorpresa ❤️"
-        : "Descubrir otra razón ❤️";
-}
-
-function showFinal() {
-    const finalSection = document.getElementById("final");
-    finalSection.classList.add("show");
-    finalSection.scrollIntoView({behavior:"smooth"});
-    createHeartExplosion();
-}
-
-function createBackgroundHearts() {
-    const container = document.getElementById("hearts");
-    const symbols = ["♡","♥","❤","💕"];
-    for (let i=0;i<25;i++) {
-        const heart = document.createElement("div");
-        heart.className="heart";
-        heart.textContent=symbols[Math.floor(Math.random()*symbols.length)];
-        heart.style.left=Math.random()*100+"%";
-        heart.style.fontSize=(12+Math.random()*22)+"px";
-        heart.style.animationDuration=(8+Math.random()*12)+"s";
-        heart.style.animationDelay=Math.random()*10+"s";
-        container.appendChild(heart);
-    }
-}
-
-function createHeartExplosion() {
-    const container = document.getElementById("hearts");
-    for (let i=0;i<45;i++) {
-        const heart=document.createElement("div");
-        heart.className="heart";
-        heart.textContent="❤️";
-        heart.style.left=Math.random()*100+"%";
-        heart.style.fontSize=(15+Math.random()*25)+"px";
-        heart.style.animationDuration=(4+Math.random()*6)+"s";
-        container.appendChild(heart);
-    }
-}
-
-createBackgroundHearts();
+const TOTAL=razones.length;
+if(TOTAL!==500) console.warn('La lista debería contener exactamente 500 razones. Actualmente:',TOTAL);
+let currentReason=0, letterOpened=false, milestoneOpen=false;
+const $=id=>document.getElementById(id);
+function makeStars(){const c=$('stars');for(let i=0;i<110;i++){const e=document.createElement('i');e.className='star';e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.animationDelay=Math.random()*4+'s';e.style.animationDuration=(2+Math.random()*4)+'s';c.appendChild(e)}}
+function makeParticles(){const c=$('particles');for(let i=0;i<18;i++){const e=document.createElement('i');e.className='particle';e.style.left=Math.random()*100+'%';e.style.animationDelay=Math.random()*14+'s';e.style.animationDuration=(10+Math.random()*10)+'s';c.appendChild(e)}}
+function makeHearts(count=22,burst=false){const c=$('hearts');for(let i=0;i<count;i++){const e=document.createElement('div');e.className='heart';e.textContent=['♡','♥','❤','✦'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'%';e.style.fontSize=(12+Math.random()*24)+'px';e.style.animationDuration=(burst?3+Math.random()*4:8+Math.random()*12)+'s';e.style.animationDelay=Math.random()*(burst?1:10)+'s';if(burst){e.style.opacity='.75';e.style.animationName='heartFloat';}c.appendChild(e);setTimeout(()=>e.remove(),burst?7000:22000)}}
+function showOnly(id){['home','letterScreen','bookScreen','finalScreen'].forEach(x=>$(x).classList.toggle('hidden',x!==id));window.scrollTo({top:0,behavior:'smooth'})}
+function openLetterScreen(){showOnly('letterScreen');makeHearts(12,true)}
+function openLetter(){if(letterOpened)return;letterOpened=true;$('envelope').classList.add('open');setTimeout(()=>{$('letterPaper').classList.add('show');$('startBtn').classList.add('show');makeHearts(18,true)},550)}
+function startBook(){showOnly('bookScreen');$('reason').textContent='Hay 500 pequeñas razones esperando para contarte cuánto te amo.';$('reasonNumber').textContent='Cuando estés lista...';currentReason=0;updateUI()}
+function nextReason(){if(milestoneOpen)return;if(currentReason>=TOTAL){showFinal();return}currentReason++;const page=$('page');page.classList.remove('turn');void page.offsetWidth;page.classList.add('turn');$('reasonNumber').textContent='Razón #'+currentReason;$('reason').textContent=razones[currentReason-1];$('counter').textContent=currentReason+' / '+TOTAL;$('progress').style.width=(currentReason/TOTAL*100)+'%';$('reasonBtn').textContent=currentReason===TOTAL?'Descubrir la sorpresa ❤️':'Descubrir otra razón ❤️';if(currentReason===TOTAL){$('bookHint').textContent='La última razón ya está aquí... pero todavía queda algo para ti.';setTimeout(()=>makeHearts(35,true),450)}if(currentReason%10===0 && currentReason<TOTAL) showMilestone(currentReason)}
+function updateUI(){$('counter').textContent=currentReason+' / '+TOTAL;$('progress').style.width=(currentReason/TOTAL*100)+'%'}
+function showMilestone(n){milestoneOpen=true;const messages={10:'Y apenas estamos comenzando... hay 490 razones más.',20:'20 razones y todavía me quedan infinitas cosas que decirte.',30:'Cada página es una pequeña parte de todo lo que siento por ti.',40:'No sé si existan palabras suficientes, pero voy a intentarlo.',50:'50 razones. Y ninguna alcanza para explicar cuánto te amo.',100:'100 razones. Si pudiera, escribiría mil más.',150:'150 razones... y sigues siendo mi parte favorita de la historia.',200:'200 razones. Gracias por ser tú.',250:'Mitad del camino. Y todavía no quiero parar.',300:'300 razones. Me haces querer guardar cada momento contigo.',350:'350 razones. Y aún encuentro nuevas formas de quererte.',400:'400 razones. Qué bonito es tenerte en mi vida.',450:'450 razones. Ya casi llegamos a ese pequeño secreto final.',};$('milestoneBig').textContent=n+' ♡';$('milestoneText').textContent=messages[n]||'Una pequeña pausa para recordarte que te amo.';$('milestone').classList.add('show');makeHearts(25,true)}
+function closeMilestone(){milestoneOpen=false;$('milestone').classList.remove('show')}
+function showFinal(){showOnly('finalScreen');makeHearts(70,true);window.scrollTo({top:0,behavior:'smooth'})}
+makeStars();makeParticles();makeHearts();setInterval(()=>makeHearts(3),5000);
 </script>
 </body>
 </html>
